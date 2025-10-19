@@ -5,7 +5,7 @@ jobs:
   build-push:
     runs-on: ubuntu-latest
     env:
-      DH_USER: "${{ secrets.DOCKERHUB_USER }}"
+      DH_USER: "${{ secrets.DOCKERHUB_USERNAME }}"
       REPO: "${{ secrets.DOCKERHUB_REPO }}"
     steps:
     - uses: actions/checkout@v4
